@@ -4,54 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>DeepSeek Chat</title>
-  
+
   <!-- PWA 配置 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="DeepSeek">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
-  <link rel="manifest" href="data:application/manifest+json,{ &quot;name&quot;: &quot;DeepSeek Chat&quot;, &quot;short_name&quot;: &quot;DeepSeek&quot;, &quot;start_url&quot;: &quot;.&quot;, &quot;display&quot;: &quot;standalone&quot;, &quot;background_color&quot;: &quot;#1a1a2e&quot;, &quot;theme_color&quot;: &quot;#0f3460&quot;, &quot;icons&quot;: [{ &quot;src&quot;: &quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>&quot;, &quot;sizes&quot;: &quot;100x100&quot;, &quot;type&quot;: &quot;image/svg+xml&quot; }] }">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1391 1024'><path d='M1299.71873948 109.08164852c-12.94676356-6.47485468-18.53640721 5.86654827-26.09973268 12.13814317-2.57756953 2.02376031-4.77807747 4.65435413-6.9785854 7.08168819-18.91788751 20.63528526-41.02017805 34.19182812-69.92725219 32.57311445-42.23384508-2.42733405-78.29772513 11.12773591-110.16384908 44.10589701-6.77679853-40.66668282-29.28560862-64.94444203-63.55255448-80.5232723-17.95608583-8.09209545-36.06388005-16.1856638-48.63358202-33.78825438-8.74900746-12.5431898-11.12773591-26.50330641-15.52727889-40.26016326-2.7823022-8.29535522-5.56460442-16.79249731-14.92044537-18.20942412-10.19244639-1.61871367-14.16337637 7.08168818-18.15934561 14.36516325-15.93232553 29.74073376-22.12880269 62.51710799-21.49692993 95.69705596 1.36684831 74.65672404 32.27117059 134.13819156 93.62469003 176.42358804 6.9800583 4.8546681 8.77551959 9.71080912 6.57501167 16.7910244-4.17271686 14.56695011-9.18056624 28.7303265-13.55506996 43.29727663-2.78377509 9.30723537-6.95501906 11.32952278-16.74241882 7.28347506-33.66158524-14.36516325-62.745407-35.60875491-88.46513227-61.30196805-43.62425973-43.09548975-83.0772755-90.64060097-132.26613965-127.86659668a581.67054343 581.67054343 0 0 0-35.07703915-24.481019c-50.20074429-49.77065841 6.57501167-90.63912807 19.72650787-95.49526908 13.73181759-5.05792788 4.77955037-22.4572587-39.65480261-22.25547183s-85.07599655 15.3770434-136.87041529 35.60875492c-7.58541892 3.03416756-15.55379103 5.25971475-23.69596497 7.08168819-47.03990759-9.10544849-95.84876434-11.12773591-146.85960188-5.26118764-96.02551195 10.92594905-172.73103555 57.25739323-229.12678414 136.36373875-67.72674425 95.09022244-83.68558192 203.13015422-64.13582166 315.82149433 20.48504978 118.76262107 79.88992666 217.09027084 171.13736116 293.9710692 94.6350973 79.71317902 203.61031862 118.76262107 327.93607115 111.27735912 75.51542292-4.45256725 159.57953934-14.77020989 254.41642352-96.71040901 23.92426399 12.13961607 49.03715574 16.99575708 90.66564022 20.63675815 32.09295007 3.03416756 62.97223311-1.61871367 86.87145787-6.67664152 37.45429471-8.09209545 34.84874013-43.49906349 21.3187094-49.97244528-109.7838417-52.19946535-85.68283009-30.95587367-107.58333375-48.15194474 55.78891504-67.37324899 139.85303146-137.3770918 172.73103558-364.17669887 2.60408167-18.00616433 0.40357375-29.33568711 0-43.90263723-0.20325977-8.90218873 1.76894914-12.34287584 11.75960868-13.3532831 27.49014733-3.23742733 54.19671351-10.92594905 78.70277175-24.68280587 71.11440706-39.65480265 99.81822142-104.80250446 106.59649285-182.89844271 1.01188015-11.9363563-0.20178686-24.27775924-12.56970195-30.54935415M679.88691083 811.94067418c-106.36966673-85.37941333-157.98733782-113.5014334-179.30604723-112.28776638-19.92829476 1.21366703-16.33737217 24.48101902-11.96286845 39.65480263 4.5777635 14.97199677 10.57098089 25.2896394 18.94145388 38.44113563 5.76786417 8.70040186 9.76383341 21.64863831-5.78995764 31.35944742-34.26841876 21.64863831-93.82647692-7.28347506-96.60730623-8.69892897-69.3454579-41.67856295-127.33635378-96.710409-168.17978423-171.97249367-39.45154288-72.43117687-62.33888747-150.1220685-66.13306982-233.07267484-1.01188015-20.02992464 4.77955037-27.11161282 24.27923215-30.75408683a235.19659216 235.19659216 0 0 1 77.91771776-2.0222874c108.59668681 16.18713669 201.05631542 65.75453531 278.54394725 144.25552022 44.23256614 44.71125762 77.69089163 98.12439001 112.18613649 150.32385536 36.64567431 55.43394691 76.0986901 108.24024576 126.2994344 151.53604948 17.72778682 15.17378365 31.86465106 26.7065662 45.41972101 35.20370828-40.84343042 4.65435413-108.99878765 5.66476139-155.60860934-31.96628093m51.00936468-334.83953884c0-8.90218873 6.9815312-15.98387693 15.75557788-15.98387693q2.98408908 0.05155138 5.36134465 1.01188016a15.85720779 15.85720779 0 0 1 10.16740716 14.97199677 15.78061715 15.78061715 0 0 1-15.73053865 15.98387692 15.60386953 15.60386953 0 0 1-15.55379104-15.98387692m158.39238445 82.95060636c-10.1423679 4.24930749-20.30830215 7.89178146-30.09570189 8.29535522-15.12370514 0.81009328-31.66286419-5.46150162-40.61513143-13.15002333-13.96011661-11.93782919-23.92573689-18.61447073-28.09845373-39.45301577-1.79546129-8.90218873-0.81009328-22.65904557 0.78505404-30.54935414 3.59092258-16.99575708-0.40504665-27.92023321-12.13961607-37.8343021-9.55910075-8.09356835-21.72522894-10.31911553-35.07703915-10.31911553-4.98281013 0-9.55910075-2.22407429-12.94823646-4.04604772a13.27669246 13.27669246 0 0 1-5.76639126-18.61299785c1.39041466-2.8323807 8.16868608-9.71228202 9.76236049-10.92594903 18.13136058-10.52090241 39.04649623-7.08021529 58.36795747 0.81009328 17.93104659 7.48526194 31.46107731 21.24359167 51.01083759 40.66668278 19.92829476 23.46913885 23.51921733 29.94399353 34.84874012 47.54511124 8.97877936 13.75685685 17.14746545 27.92023321 22.71206985 44.1044241 3.41270206 10.11732865-0.98684091 18.41121097-12.74644957 23.46913885' fill='%234D6BFE'/></svg>">
+  <link rel="manifest" href="data:application/manifest+json,{ &quot;name&quot;: &quot;DeepSeek Chat&quot;, &quot;short_name&quot;: &quot;DeepSeek&quot;, &quot;start_url&quot;: &quot;.&quot;, &quot;display&quot;: &quot;standalone&quot;, &quot;background_color&quot;: &quot;#0a0f1c&quot;, &quot;theme_color&quot;: &quot;#1a2332&quot;, &quot;icons&quot;: [{ &quot;src&quot;: &quot;data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1391 1024'><path d='M1299.71873948 109.08164852c-12.94676356-6.47485468-18.53640721 5.86654827-26.09973268 12.13814317-2.57756953 2.02376031-4.77807747 4.65435413-6.9785854 7.08168819-18.91788751 20.63528526-41.02017805 34.19182812-69.92725219 32.57311445-42.23384508-2.42733405-78.29772513 11.12773591-110.16384908 44.10589701-6.77679853-40.66668282-29.28560862-64.94444203-63.55255448-80.5232723-17.95608583-8.09209545-36.06388005-16.1856638-48.63358202-33.78825438-8.74900746-12.5431898-11.12773591-26.50330641-15.52727889-40.26016326-2.7823022-8.29535522-5.56460442-16.79249731-14.92044537-18.20942412-10.19244639-1.61871367-14.16337637 7.08168818-18.15934561 14.36516325-15.93232553 29.74073376-22.12880269 62.51710799-21.49692993 95.69705596 1.36684831 74.65672404 32.27117059 134.13819156 93.62469003 176.42358804 6.9800583 4.8546681 8.77551959 9.71080912 6.57501167 16.7910244-4.17271686 14.56695011-9.18056624 28.7303265-13.55506996 43.29727663-2.78377509 9.30723537-6.95501906 11.32952278-16.74241882 7.28347506-33.66158524-14.36516325-62.745407-35.60875491-88.46513227-61.30196805-43.62425973-43.09548975-83.0772755-90.64060097-132.26613965-127.86659668a581.67054343 581.67054343 0 0 0-35.07703915-24.481019c-50.20074429-49.77065841 6.57501167-90.63912807 19.72650787-95.49526908 13.73181759-5.05792788 4.77955037-22.4572587-39.65480261-22.25547183s-85.07599655 15.3770434-136.87041529 35.60875492c-7.58541892 3.03416756-15.55379103 5.25971475-23.69596497 7.08168819-47.03990759-9.10544849-95.84876434-11.12773591-146.85960188-5.26118764-96.02551195 10.92594905-172.73103555 57.25739323-229.12678414 136.36373875-67.72674425 95.09022244-83.68558192 203.13015422-64.13582166 315.82149433 20.48504978 118.76262107 79.88992666 217.09027084 171.13736116 293.9710692 94.6350973 79.71317902 203.61031862 118.76262107 327.93607115 111.27735912 75.51542292-4.45256725 159.57953934-14.77020989 254.41642352-96.71040901 23.92426399 12.13961607 49.03715574 16.99575708 90.66564022 20.63675815 32.09295007 3.03416756 62.97223311-1.61871367 86.87145787-6.67664152 37.45429471-8.09209545 34.84874013-43.49906349 21.3187094-49.97244528-109.7838417-52.19946535-85.68283009-30.95587367-107.58333375-48.15194474 55.78891504-67.37324899 139.85303146-137.3770918 172.73103558-364.17669887 2.60408167-18.00616433 0.40357375-29.33568711 0-43.90263723-0.20325977-8.90218873 1.76894914-12.34287584 11.75960868-13.3532831 27.49014733-3.23742733 54.19671351-10.92594905 78.70277175-24.68280587 71.11440706-39.65480265 99.81822142-104.80250446 106.59649285-182.89844271 1.01188015-11.9363563-0.20178686-24.27775924-12.56970195-30.54935415M679.88691083 811.94067418c-106.36966673-85.37941333-157.98733782-113.5014334-179.30604723-112.28776638-19.92829476 1.21366703-16.33737217 24.48101902-11.96286845 39.65480263 4.5777635 14.97199677 10.57098089 25.2896394 18.94145388 38.44113563 5.76786417 8.70040186 9.76383341 21.64863831-5.78995764 31.35944742-34.26841876 21.64863831-93.82647692-7.28347506-96.60730623-8.69892897-69.3454579-41.67856295-127.33635378-96.710409-168.17978423-171.97249367-39.45154288-72.43117687-62.33888747-150.1220685-66.13306982-233.07267484-1.01188015-20.02992464 4.77955037-27.11161282 24.27923215-30.75408683a235.19659216 235.19659216 0 0 1 77.91771776-2.0222874c108.59668681 16.18713669 201.05631542 65.75453531 278.54394725 144.25552022 44.23256614 44.71125762 77.69089163 98.12439001 112.18613649 150.32385536 36.64567431 55.43394691 76.0986901 108.24024576 126.2994344 151.53604948 17.72778682 15.17378365 31.86465106 26.7065662 45.41972101 35.20370828-40.84343042 4.65435413-108.99878765 5.66476139-155.60860934-31.96628093m51.00936468-334.83953884c0-8.90218873 6.9815312-15.98387693 15.75557788-15.98387693q2.98408908 0.05155138 5.36134465 1.01188016a15.85720779 15.85720779 0 0 1 10.16740716 14.97199677 15.78061715 15.78061715 0 0 1-15.73053865 15.98387692 15.60386953 15.60386953 0 0 1-15.55379104-15.98387692m158.39238445 82.95060636c-10.1423679 4.24930749-20.30830215 7.89178146-30.09570189 8.29535522-15.12370514 0.81009328-31.66286419-5.46150162-40.61513143-13.15002333-13.96011661-11.93782919-23.92573689-18.61447073-28.09845373-39.45301577-1.79546129-8.90218873-0.81009328-22.65904557 0.78505404-30.54935414 3.59092258-16.99575708-0.40504665-27.92023321-12.13961607-37.8343021-9.55910075-8.09356835-21.72522894-10.31911553-35.07703915-10.31911553-4.98281013 0-9.55910075-2.22407429-12.94823646-4.04604772a13.27669246 13.27669246 0 0 1-5.76639126-18.61299785c1.39041466-2.8323807 8.16868608-9.71228202 9.76236049-10.92594903 18.13136058-10.52090241 39.04649623-7.08021529 58.36795747 0.81009328 17.93104659 7.48526194 31.46107731 21.24359167 51.01083759 40.66668278 19.92829476 23.46913885 23.51921733 29.94399353 34.84874012 47.54511124 8.97877936 13.75685685 17.14746545 27.92023321 22.71206985 44.1044241 3.41270206 10.11732865-0.98684091 18.41121097-12.74644957 23.46913885' fill='%234D6BFE'/></svg>&quot;, &quot;sizes&quot;: &quot;1391x1024&quot;, &quot;type&quot;: &quot;image/svg+xml&quot; }] }">
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #1a1a2e;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #0a0f1c;
       display: flex;
-      flex-direction: column;
       height: 100vh;
       height: 100dvh;
       overflow: hidden;
-      -webkit-user-select: none;
-      user-select: none;
+      color: #d1d5db;
     }
-    .header {
-      background: #16213e;
+
+    /* ===== 侧边栏 ===== */
+    .sidebar {
+      width: 280px;
+      background: #111827;
+      border-right: 1px solid #1e293b;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+      z-index: 30;
+    }
+    .sidebar-logo {
+      padding: 20px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #1e293b;
+    }
+    .sidebar-logo span {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f1f5f9;
+    }
+    .sidebar-actions {
       padding: 12px 16px;
+      border-bottom: 1px solid #1e293b;
+    }
+    .sidebar-actions button {
+      width: 100%;
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #cbd5e1;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .sidebar-actions button:hover {
+      background: #334155;
+      color: white;
+    }
+    .conversation-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px;
+    }
+    .conversation-item {
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 2px;
+      cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #0f3460;
-      color: #e0e0e0;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      padding-top: max(12px, env(safe-area-inset-top));
-      padding-left: max(16px, env(safe-area-inset-left));
-      padding-right: max(16px, env(safe-area-inset-right));
+      color: #94a3b8;
+      font-size: 14px;
+      transition: background 0.15s;
     }
-    .header h1 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #ffffff;
+    .conversation-item.active {
+      background: #1e293b;
+      color: #f1f5f9;
     }
-    .header button {
+    .conversation-item:not(.active):hover {
+      background: #1a2232;
+    }
+    .conversation-item .title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+    }
+    .delete-conv {
+      opacity: 0;
+      transition: opacity 0.2s;
+      color: #ef4444;
+      margin-left: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .conversation-item:hover .delete-conv {
+      opacity: 1;
+    }
+
+    /* ===== 主界面 ===== */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .header {
+      background: #111827;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #1e293b;
+      gap: 12px;
+    }
+    .menu-btn {
       background: none;
       border: none;
-      font-size: 20px;
-      color: #4e8ef7;
+      color: #60a5fa;
+      font-size: 24px;
       cursor: pointer;
-      padding: 4px 8px;
+      padding: 0;
+      display: none;
     }
     .chat-container {
       flex: 1;
@@ -59,103 +142,114 @@
       padding: 16px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
       -webkit-overflow-scrolling: touch;
-      padding-bottom: max(16px, env(safe-area-inset-bottom));
     }
     .message {
-      max-width: 85%;
-      padding: 10px 14px;
-      border-radius: 18px;
-      line-height: 1.5;
+      max-width: 80%;
+      padding: 12px 16px;
+      border-radius: 16px;
+      line-height: 1.6;
       word-break: break-word;
       animation: fadeIn 0.2s ease;
-      font-size: 16px;
+      font-size: 15px;
     }
     .user {
       align-self: flex-end;
-      background: #0f3460;
+      background: #2563eb;
       color: white;
       border-bottom-right-radius: 4px;
     }
     .assistant {
       align-self: flex-start;
-      background: #16213e;
-      color: #e0e0e0;
+      background: #1e293b;
+      color: #e2e8f0;
       border-bottom-left-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
     .assistant pre {
-      background: #1a1a2e;
-      padding: 8px;
+      background: #0f172a;
+      padding: 12px;
       border-radius: 8px;
       overflow-x: auto;
-      font-size: 14px;
-      margin: 6px 0;
-      color: #e0e0e0;
+      font-size: 13px;
+      margin: 8px 0;
+      color: #cbd5e1;
+      border: 1px solid #334155;
     }
     .assistant code {
-      font-family: monospace;
-      font-size: 14px;
-      color: #e0a0ff;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 13px;
+      color: #93c5fd;
     }
     .input-area {
-      background: #16213e;
-      padding: 12px 16px;
-      border-top: 1px solid #0f3460;
+      background: #111827;
+      padding: 14px 16px;
+      border-top: 1px solid #1e293b;
       display: flex;
-      gap: 8px;
+      gap: 10px;
       align-items: center;
-      padding-bottom: max(12px, env(safe-area-inset-bottom));
+      padding-bottom: max(14px, env(safe-area-inset-bottom));
       padding-left: max(16px, env(safe-area-inset-left));
       padding-right: max(16px, env(safe-area-inset-right));
     }
     .input-area input {
       flex: 1;
-      border: 1px solid #0f3460;
-      border-radius: 20px;
-      padding: 10px 16px;
-      font-size: 16px;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-size: 15px;
       outline: none;
-      background: #1a1a2e;
-      color: #e0e0e0;
+      background: #0f172a;
+      color: #e2e8f0;
       -webkit-appearance: none;
+      transition: border-color 0.2s;
+    }
+    .input-area input:focus {
+      border-color: #3b82f6;
     }
     .input-area input::placeholder {
-      color: #6c7a8d;
+      color: #64748b;
     }
     .input-area button {
-      background: #4e8ef7;
+      background: #3b82f6;
       color: white;
       border: none;
       border-radius: 50%;
-      width: 44px;
-      height: 44px;
+      width: 44px; height: 44px;
       font-size: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: background 0.2s;
       flex-shrink: 0;
+      transition: background 0.2s, transform 0.1s;
     }
-    .input-area button:active { background: #3a6fd8; }
-    .input-area button:disabled { opacity: 0.5; background: #555; }
+    .input-area button:active {
+      background: #2563eb;
+      transform: scale(0.95);
+    }
+    .input-area button:disabled {
+      opacity: 0.5;
+      background: #475569;
+    }
 
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     .typing-indicator {
       align-self: flex-start;
-      background: #16213e;
+      background: #1e293b;
       padding: 12px 16px;
-      border-radius: 18px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-      display: flex;
-      gap: 4px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      display: flex; gap: 4px;
     }
     .typing-indicator span {
       width: 8px; height: 8px;
-      background: #6c7a8d;
+      background: #64748b;
       border-radius: 50%;
       animation: bounce 1.4s infinite ease-in-out both;
     }
@@ -168,59 +262,180 @@
 
     .error {
       align-self: flex-start;
-      background: #3a1a1a;
-      color: #ff6b6b;
-      padding: 10px 14px;
-      border-radius: 18px;
+      background: #3b1e1e;
+      color: #f87171;
+      padding: 10px 16px;
+      border-radius: 12px;
       font-size: 14px;
+    }
+
+    /* 移动端 */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: fixed;
+        left: 0; top: 0; bottom: 0;
+        transform: translateX(-100%);
+      }
+      .sidebar.open {
+        transform: translateX(0);
+        box-shadow: 4px 0 25px rgba(0,0,0,0.6);
+      }
+      .menu-btn { display: block; }
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>🤖 DeepSeek</h1>
-    <button id="clearBtn" title="清空对话">🗑️</button>
+  <!-- 侧边栏 -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <svg viewBox="0 0 1391 1024" width="28" height="28" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+        <path d="M1299.71873948 109.08164852c-12.94676356-6.47485468-18.53640721 5.86654827-26.09973268 12.13814317-2.57756953 2.02376031-4.77807747 4.65435413-6.9785854 7.08168819-18.91788751 20.63528526-41.02017805 34.19182812-69.92725219 32.57311445-42.23384508-2.42733405-78.29772513 11.12773591-110.16384908 44.10589701-6.77679853-40.66668282-29.28560862-64.94444203-63.55255448-80.5232723-17.95608583-8.09209545-36.06388005-16.1856638-48.63358202-33.78825438-8.74900746-12.5431898-11.12773591-26.50330641-15.52727889-40.26016326-2.7823022-8.29535522-5.56460442-16.79249731-14.92044537-18.20942412-10.19244639-1.61871367-14.16337637 7.08168818-18.15934561 14.36516325-15.93232553 29.74073376-22.12880269 62.51710799-21.49692993 95.69705596 1.36684831 74.65672404 32.27117059 134.13819156 93.62469003 176.42358804 6.9800583 4.8546681 8.77551959 9.71080912 6.57501167 16.7910244-4.17271686 14.56695011-9.18056624 28.7303265-13.55506996 43.29727663-2.78377509 9.30723537-6.95501906 11.32952278-16.74241882 7.28347506-33.66158524-14.36516325-62.745407-35.60875491-88.46513227-61.30196805-43.62425973-43.09548975-83.0772755-90.64060097-132.26613965-127.86659668a581.67054343 581.67054343 0 0 0-35.07703915-24.481019c-50.20074429-49.77065841 6.57501167-90.63912807 19.72650787-95.49526908 13.73181759-5.05792788 4.77955037-22.4572587-39.65480261-22.25547183s-85.07599655 15.3770434-136.87041529 35.60875492c-7.58541892 3.03416756-15.55379103 5.25971475-23.69596497 7.08168819-47.03990759-9.10544849-95.84876434-11.12773591-146.85960188-5.26118764-96.02551195 10.92594905-172.73103555 57.25739323-229.12678414 136.36373875-67.72674425 95.09022244-83.68558192 203.13015422-64.13582166 315.82149433 20.48504978 118.76262107 79.88992666 217.09027084 171.13736116 293.9710692 94.6350973 79.71317902 203.61031862 118.76262107 327.93607115 111.27735912 75.51542292-4.45256725 159.57953934-14.77020989 254.41642352-96.71040901 23.92426399 12.13961607 49.03715574 16.99575708 90.66564022 20.63675815 32.09295007 3.03416756 62.97223311-1.61871367 86.87145787-6.67664152 37.45429471-8.09209545 34.84874013-43.49906349 21.3187094-49.97244528-109.7838417-52.19946535-85.68283009-30.95587367-107.58333375-48.15194474 55.78891504-67.37324899 139.85303146-137.3770918 172.73103558-364.17669887 2.60408167-18.00616433 0.40357375-29.33568711 0-43.90263723-0.20325977-8.90218873 1.76894914-12.34287584 11.75960868-13.3532831 27.49014733-3.23742733 54.19671351-10.92594905 78.70277175-24.68280587 71.11440706-39.65480265 99.81822142-104.80250446 106.59649285-182.89844271 1.01188015-11.9363563-0.20178686-24.27775924-12.56970195-30.54935415M679.88691083 811.94067418c-106.36966673-85.37941333-157.98733782-113.5014334-179.30604723-112.28776638-19.92829476 1.21366703-16.33737217 24.48101902-11.96286845 39.65480263 4.5777635 14.97199677 10.57098089 25.2896394 18.94145388 38.44113563 5.76786417 8.70040186 9.76383341 21.64863831-5.78995764 31.35944742-34.26841876 21.64863831-93.82647692-7.28347506-96.60730623-8.69892897-69.3454579-41.67856295-127.33635378-96.710409-168.17978423-171.97249367-39.45154288-72.43117687-62.33888747-150.1220685-66.13306982-233.07267484-1.01188015-20.02992464 4.77955037-27.11161282 24.27923215-30.75408683a235.19659216 235.19659216 0 0 1 77.91771776-2.0222874c108.59668681 16.18713669 201.05631542 65.75453531 278.54394725 144.25552022 44.23256614 44.71125762 77.69089163 98.12439001 112.18613649 150.32385536 36.64567431 55.43394691 76.0986901 108.24024576 126.2994344 151.53604948 17.72778682 15.17378365 31.86465106 26.7065662 45.41972101 35.20370828-40.84343042 4.65435413-108.99878765 5.66476139-155.60860934-31.96628093m51.00936468-334.83953884c0-8.90218873 6.9815312-15.98387693 15.75557788-15.98387693q2.98408908 0.05155138 5.36134465 1.01188016a15.85720779 15.85720779 0 0 1 10.16740716 14.97199677 15.78061715 15.78061715 0 0 1-15.73053865 15.98387692 15.60386953 15.60386953 0 0 1-15.55379104-15.98387692m158.39238445 82.95060636c-10.1423679 4.24930749-20.30830215 7.89178146-30.09570189 8.29535522-15.12370514 0.81009328-31.66286419-5.46150162-40.61513143-13.15002333-13.96011661-11.93782919-23.92573689-18.61447073-28.09845373-39.45301577-1.79546129-8.90218873-0.81009328-22.65904557 0.78505404-30.54935414 3.59092258-16.99575708-0.40504665-27.92023321-12.13961607-37.8343021-9.55910075-8.09356835-21.72522894-10.31911553-35.07703915-10.31911553-4.98281013 0-9.55910075-2.22407429-12.94823646-4.04604772a13.27669246 13.27669246 0 0 1-5.76639126-18.61299785c1.39041466-2.8323807 8.16868608-9.71228202 9.76236049-10.92594903 18.13136058-10.52090241 39.04649623-7.08021529 58.36795747 0.81009328 17.93104659 7.48526194 31.46107731 21.24359167 51.01083759 40.66668278 19.92829476 23.46913885 23.51921733 29.94399353 34.84874012 47.54511124 8.97877936 13.75685685 17.14746545 27.92023321 22.71206985 44.1044241 3.41270206 10.11732865-0.98684091 18.41121097-12.74644957 23.46913885" fill="#4D6BFE"/>
+      </svg>
+      <span>DeepSeek</span>
+    </div>
+    <div class="sidebar-actions">
+      <button id="newChatBtn">＋ 新对话</button>
+    </div>
+    <div class="conversation-list" id="conversationList"></div>
   </div>
-  <div class="chat-container" id="chatContainer"></div>
-  <div class="input-area">
-    <input type="text" id="userInput" placeholder="输入消息..." autocomplete="off" enterkeyhint="send">
-    <button id="sendBtn">➤</button>
+
+  <!-- 主界面 -->
+  <div class="main">
+    <div class="header">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <h1 style="display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 600; color: #f1f5f9;">
+        <svg viewBox="0 0 1391 1024" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1299.71873948 109.08164852c-12.94676356-6.47485468-18.53640721 5.86654827-26.09973268 12.13814317-2.57756953 2.02376031-4.77807747 4.65435413-6.9785854 7.08168819-18.91788751 20.63528526-41.02017805 34.19182812-69.92725219 32.57311445-42.23384508-2.42733405-78.29772513 11.12773591-110.16384908 44.10589701-6.77679853-40.66668282-29.28560862-64.94444203-63.55255448-80.5232723-17.95608583-8.09209545-36.06388005-16.1856638-48.63358202-33.78825438-8.74900746-12.5431898-11.12773591-26.50330641-15.52727889-40.26016326-2.7823022-8.29535522-5.56460442-16.79249731-14.92044537-18.20942412-10.19244639-1.61871367-14.16337637 7.08168818-18.15934561 14.36516325-15.93232553 29.74073376-22.12880269 62.51710799-21.49692993 95.69705596 1.36684831 74.65672404 32.27117059 134.13819156 93.62469003 176.42358804 6.9800583 4.8546681 8.77551959 9.71080912 6.57501167 16.7910244-4.17271686 14.56695011-9.18056624 28.7303265-13.55506996 43.29727663-2.78377509 9.30723537-6.95501906 11.32952278-16.74241882 7.28347506-33.66158524-14.36516325-62.745407-35.60875491-88.46513227-61.30196805-43.62425973-43.09548975-83.0772755-90.64060097-132.26613965-127.86659668a581.67054343 581.67054343 0 0 0-35.07703915-24.481019c-50.20074429-49.77065841 6.57501167-90.63912807 19.72650787-95.49526908 13.73181759-5.05792788 4.77955037-22.4572587-39.65480261-22.25547183s-85.07599655 15.3770434-136.87041529 35.60875492c-7.58541892 3.03416756-15.55379103 5.25971475-23.69596497 7.08168819-47.03990759-9.10544849-95.84876434-11.12773591-146.85960188-5.26118764-96.02551195 10.92594905-172.73103555 57.25739323-229.12678414 136.36373875-67.72674425 95.09022244-83.68558192 203.13015422-64.13582166 315.82149433 20.48504978 118.76262107 79.88992666 217.09027084 171.13736116 293.9710692 94.6350973 79.71317902 203.61031862 118.76262107 327.93607115 111.27735912 75.51542292-4.45256725 159.57953934-14.77020989 254.41642352-96.71040901 23.92426399 12.13961607 49.03715574 16.99575708 90.66564022 20.63675815 32.09295007 3.03416756 62.97223311-1.61871367 86.87145787-6.67664152 37.45429471-8.09209545 34.84874013-43.49906349 21.3187094-49.97244528-109.7838417-52.19946535-85.68283009-30.95587367-107.58333375-48.15194474 55.78891504-67.37324899 139.85303146-137.3770918 172.73103558-364.17669887 2.60408167-18.00616433 0.40357375-29.33568711 0-43.90263723-0.20325977-8.90218873 1.76894914-12.34287584 11.75960868-13.3532831 27.49014733-3.23742733 54.19671351-10.92594905 78.70277175-24.68280587 71.11440706-39.65480265 99.81822142-104.80250446 106.59649285-182.89844271 1.01188015-11.9363563-0.20178686-24.27775924-12.56970195-30.54935415M679.88691083 811.94067418c-106.36966673-85.37941333-157.98733782-113.5014334-179.30604723-112.28776638-19.92829476 1.21366703-16.33737217 24.48101902-11.96286845 39.65480263 4.5777635 14.97199677 10.57098089 25.2896394 18.94145388 38.44113563 5.76786417 8.70040186 9.76383341 21.64863831-5.78995764 31.35944742-34.26841876 21.64863831-93.82647692-7.28347506-96.60730623-8.69892897-69.3454579-41.67856295-127.33635378-96.710409-168.17978423-171.97249367-39.45154288-72.43117687-62.33888747-150.1220685-66.13306982-233.07267484-1.01188015-20.02992464 4.77955037-27.11161282 24.27923215-30.75408683a235.19659216 235.19659216 0 0 1 77.91771776-2.0222874c108.59668681 16.18713669 201.05631542 65.75453531 278.54394725 144.25552022 44.23256614 44.71125762 77.69089163 98.12439001 112.18613649 150.32385536 36.64567431 55.43394691 76.0986901 108.24024576 126.2994344 151.53604948 17.72778682 15.17378365 31.86465106 26.7065662 45.41972101 35.20370828-40.84343042 4.65435413-108.99878765 5.66476139-155.60860934-31.96628093m51.00936468-334.83953884c0-8.90218873 6.9815312-15.98387693 15.75557788-15.98387693q2.98408908 0.05155138 5.36134465 1.01188016a15.85720779 15.85720779 0 0 1 10.16740716 14.97199677 15.78061715 15.78061715 0 0 1-15.73053865 15.98387692 15.60386953 15.60386953 0 0 1-15.55379104-15.98387692m158.39238445 82.95060636c-10.1423679 4.24930749-20.30830215 7.89178146-30.09570189 8.29535522-15.12370514 0.81009328-31.66286419-5.46150162-40.61513143-13.15002333-13.96011661-11.93782919-23.92573689-18.61447073-28.09845373-39.45301577-1.79546129-8.90218873-0.81009328-22.65904557 0.78505404-30.54935414 3.59092258-16.99575708-0.40504665-27.92023321-12.13961607-37.8343021-9.55910075-8.09356835-21.72522894-10.31911553-35.07703915-10.31911553-4.98281013 0-9.55910075-2.22407429-12.94823646-4.04604772a13.27669246 13.27669246 0 0 1-5.76639126-18.61299785c1.39041466-2.8323807 8.16868608-9.71228202 9.76236049-10.92594903 18.13136058-10.52090241 39.04649623-7.08021529 58.36795747 0.81009328 17.93104659 7.48526194 31.46107731 21.24359167 51.01083759 40.66668278 19.92829476 23.46913885 23.51921733 29.94399353 34.84874012 47.54511124 8.97877936 13.75685685 17.14746545 27.92023321 22.71206985 44.1044241 3.41270206 10.11732865-0.98684091 18.41121097-12.74644957 23.46913885" fill="#4D6BFE"/>
+        </svg>
+        DeepSeek
+      </h1>
+    </div>
+    <div class="chat-container" id="chatContainer"></div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="输入消息..." autocomplete="off" enterkeyhint="send">
+      <button id="sendBtn">➤</button>
+    </div>
   </div>
 
   <script>
     // ========== 改成你的 Cloudflare Worker 地址 ==========
-    const PROXY_URL = 'https://mydeepseek.yuyan0526lu.workers.dev';
+    const PROXY_URL = 'mydeepseek.yuyan0526lu.workers.dev';
 
     const chatContainer = document.getElementById('chatContainer');
     const userInput = document.getElementById('userInput');
     const sendBtn = document.getElementById('sendBtn');
-    const clearBtn = document.getElementById('clearBtn');
+    const conversationList = document.getElementById('conversationList');
+    const newChatBtn = document.getElementById('newChatBtn');
+    const menuBtn = document.getElementById('menuBtn');
+    const sidebar = document.getElementById('sidebar');
 
-    // 对话历史
-    let messages = [
-      { role: 'system', content: '你是一个有帮助的助手，使用中文回答。' }
-    ];
+    const STORAGE_KEY = 'deepseek_conversations_v3';
+    let conversations = [];
+    let currentConvId = null;
 
-    // 简单的 Markdown 转 HTML
-    function simpleMarkdown(text) {
-      // 代码块
-      text = text.replace(/```(\w+)?\n([\s\S]*?)```/g, (match, lang, code) => {
-        return `<pre><code>${escapeHtml(code)}</code></pre>`;
+    function loadConversations() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try { conversations = JSON.parse(saved); } catch(e) { conversations = []; }
+      }
+      if (conversations.length === 0) {
+        const defaultConv = {
+          id: Date.now().toString(),
+          title: '新对话',
+          messages: [{ role: 'system', content: '你是一个有帮助的助手，使用中文回答。' }]
+        };
+        conversations.push(defaultConv);
+        saveConversations();
+      }
+      currentConvId = conversations[0].id;
+    }
+
+    function saveConversations() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(conversations));
+    }
+
+    function getCurrentConv() {
+      return conversations.find(c => c.id === currentConvId);
+    }
+
+    function renderConversationList() {
+      conversationList.innerHTML = '';
+      conversations.forEach(conv => {
+        const div = document.createElement('div');
+        div.className = `conversation-item ${conv.id === currentConvId ? 'active' : ''}`;
+        div.innerHTML = `
+          <span class="title">${conv.title}</span>
+          <span class="delete-conv" data-id="${conv.id}">🗑️</span>
+        `;
+        div.addEventListener('click', (e) => {
+          if (e.target.classList.contains('delete-conv')) return;
+          switchConversation(conv.id);
+        });
+        div.querySelector('.delete-conv').addEventListener('click', (e) => {
+          e.stopPropagation();
+          deleteConversation(conv.id);
+        });
+        conversationList.appendChild(div);
       });
-      // 行内代码
-      text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
-      // 加粗
-      text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-      // 换行
-      text = text.replace(/\n/g, '<br>');
-      return text;
     }
 
-    function escapeHtml(unsafe) {
-      return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    function switchConversation(id) {
+      currentConvId = id;
+      renderConversationList();
+      renderMessages();
+      if (window.innerWidth <= 768) sidebar.classList.remove('open');
     }
 
-    function addMessage(role, content) {
+    function deleteConversation(id) {
+      if (conversations.length <= 1) {
+        alert('至少保留一个对话');
+        return;
+      }
+      conversations = conversations.filter(c => c.id !== id);
+      if (currentConvId === id) currentConvId = conversations[0].id;
+      saveConversations();
+      renderConversationList();
+      renderMessages();
+    }
+
+    function newConversation() {
+      const newConv = {
+        id: Date.now().toString(),
+        title: '新对话',
+        messages: [{ role: 'system', content: '你是一个有帮助的助手，使用中文回答。' }]
+      };
+      conversations.unshift(newConv);
+      currentConvId = newConv.id;
+      saveConversations();
+      renderConversationList();
+      renderMessages();
+      if (window.innerWidth <= 768) sidebar.classList.remove('open');
+    }
+
+    function updateTitleIfNeeded() {
+      const conv = getCurrentConv();
+      if (conv && conv.title === '新对话' && conv.messages.length >= 3) {
+        const firstUserMsg = conv.messages.find(m => m.role === 'user');
+        if (firstUserMsg) {
+          conv.title = firstUserMsg.content.slice(0, 20) + (firstUserMsg.content.length > 20 ? '...' : '');
+          saveConversations();
+          renderConversationList();
+        }
+      }
+    }
+
+    function renderMessages() {
+      chatContainer.innerHTML = '';
+      const conv = getCurrentConv();
+      if (!conv) return;
+      conv.messages.forEach(msg => {
+        if (msg.role === 'user' || msg.role === 'assistant') {
+          addMessageToDOM(msg.role, msg.content);
+        }
+      });
+    }
+
+    function addMessageToDOM(role, content) {
       const div = document.createElement('div');
       div.className = `message ${role}`;
       if (role === 'assistant') {
@@ -232,16 +447,88 @@
       scrollToBottom();
     }
 
-    function addError(text) {
-      const div = document.createElement('div');
-      div.className = 'error';
-      div.textContent = text;
-      chatContainer.appendChild(div);
-      scrollToBottom();
+    function simpleMarkdown(text) {
+      text = text.replace(/```(\w+)?\n([\s\S]*?)```/g, (match, lang, code) => {
+        return `<pre><code>${escapeHtml(code)}</code></pre>`;
+      });
+      text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+      text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      text = text.replace(/\n/g, '<br>');
+      return text;
+    }
+
+    function escapeHtml(unsafe) {
+      return unsafe.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
 
     function scrollToBottom() {
       chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    async function streamResponse(userMsg) {
+      const conv = getCurrentConv();
+      const msgDiv = document.createElement('div');
+      msgDiv.className = 'message assistant';
+      msgDiv.innerHTML = '';
+      chatContainer.appendChild(msgDiv);
+
+      let fullContent = '';
+      showTyping();
+
+      try {
+        const response = await fetch(PROXY_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: 'deepseek-chat',
+            messages: conv.messages,
+            stream: true,
+          }),
+        });
+
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split('\n');
+          buffer = lines.pop();
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const jsonStr = line.slice(6).trim();
+              if (jsonStr === '[DONE]') {
+                removeTyping();
+                conv.messages.push({ role: 'assistant', content: fullContent });
+                saveConversations();
+                updateTitleIfNeeded();
+                return;
+              }
+              try {
+                const parsed = JSON.parse(jsonStr);
+                const delta = parsed.choices?.[0]?.delta?.content;
+                if (delta) {
+                  fullContent += delta;
+                  msgDiv.innerHTML = simpleMarkdown(fullContent);
+                  scrollToBottom();
+                }
+              } catch (e) {}
+            }
+          }
+        }
+      } catch (error) {
+        removeTyping();
+        msgDiv.remove();
+        const errDiv = document.createElement('div');
+        errDiv.className = 'error';
+        errDiv.textContent = '网络请求失败，请检查代理地址或网络连接。';
+        chatContainer.appendChild(errDiv);
+      }
     }
 
     function showTyping() {
@@ -258,118 +545,43 @@
       if (typing) typing.remove();
     }
 
-    // 流式输出处理
-    async function streamResponse(userMsg) {
-      showTyping();
-
-      const msgDiv = document.createElement('div');
-      msgDiv.className = 'message assistant';
-      msgDiv.innerHTML = '';
-      chatContainer.appendChild(msgDiv);
-      
-      let fullContent = '';
-
-      try {
-        const response = await fetch(PROXY_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'deepseek-chat',
-            messages: messages,
-            stream: true,
-          }),
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
-
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder();
-        let buffer = '';
-
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-
-          buffer += decoder.decode(value, { stream: true });
-          const lines = buffer.split('\n');
-          buffer = lines.pop();
-
-          for (const line of lines) {
-            if (line.startsWith('data: ')) {
-              const jsonStr = line.slice(6).trim();
-              if (jsonStr === '[DONE]') {
-                removeTyping();
-                return;
-              }
-              try {
-                const parsed = JSON.parse(jsonStr);
-                const delta = parsed.choices?.[0]?.delta?.content;
-                if (delta) {
-                  fullContent += delta;
-                  msgDiv.innerHTML = simpleMarkdown(fullContent);
-                  scrollToBottom();
-                }
-              } catch (e) {}
-            }
-          }
-        }
-
-        messages.push({ role: 'assistant', content: fullContent });
-        removeTyping();
-
-      } catch (error) {
-        removeTyping();
-        msgDiv.remove();
-        addError('网络请求失败，请检查代理地址或网络连接。');
-      }
-    }
-
     async function sendMessage() {
       const content = userInput.value.trim();
       if (!content || sendBtn.disabled) return;
+      const conv = getCurrentConv();
+      if (!conv) return;
 
       sendBtn.disabled = true;
-      
-      addMessage('user', content);
-      messages.push({ role: 'user', content });
+      addMessageToDOM('user', content);
+      conv.messages.push({ role: 'user', content });
       userInput.value = '';
+      saveConversations();
 
       await streamResponse(content);
-      
       sendBtn.disabled = false;
       userInput.focus();
-    }
-
-    function clearChat() {
-      if (confirm('确定清空所有对话吗？')) {
-        messages = [
-          { role: 'system', content: '你是一个有帮助的助手，使用中文回答。' }
-        ];
-        chatContainer.innerHTML = '';
-      }
     }
 
     sendBtn.addEventListener('click', sendMessage);
     userInput.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') sendMessage();
     });
-    clearBtn.addEventListener('click', clearChat);
+    newChatBtn.addEventListener('click', newConversation);
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
 
-    // Service Worker
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('data:application/javascript,' + encodeURIComponent(`
-          self.addEventListener('install', e => self.skipWaiting());
-          self.addEventListener('fetch', e => {
-            e.respondWith(
-              caches.match(e.request).then(r => r || fetch(e.request))
-            );
-          });
-        `));
-      });
-    }
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+        if (!sidebar.contains(e.target) && e.target !== menuBtn) {
+          sidebar.classList.remove('open');
+        }
+      }
+    });
+
+    loadConversations();
+    renderConversationList();
+    renderMessages();
   </script>
 </body>
 </html>
